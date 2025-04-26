@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome - Kuldeep</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 class="floating">Welcome!!</h1>
+        </header>
+
+        <section class="intro" data-aos="fade-up">
+            <h2>I'm Kuldeep</h2>
+            <p>I'm a 17-year-old school-going boy who loves creating websites and Telegram bots.  
+            I am a passionate learner and a small coder!</p>
+        </section>
+
+        <section class="projects" data-aos="fade-up" data-aos-delay="100">
+            <h2>My Projects</h2>
+            <ul>
+                <li>Learning more about coding</li>
+                <li>Learning Python development</li>
+            </ul>
+        </section>
+
+        <section class="dreams" data-aos="fade-up" data-aos-delay="200">
+            <h2>My Dreams</h2>
+            <p>I dream of visiting the USA, Russia, and traveling to the Himalayas!</p>
+        </section>
+
+        <section class="goals" data-aos="fade-up" data-aos-delay="300">
+            <h2>My Goal</h2>
+            <p>To become a millionaire and earn money! 💰</p>
+        </section>
+
+        <section class="contact" data-aos="fade-up" data-aos-delay="400">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:tpatel9752@gmail.com">tpatel9752@gmail.com</a></p>
+            <p>Telegram: <a href="https://t.me/Unknow9752" target="_blank">@Unknow9752</a></p>
+            <p>Owner of <strong>Data Hub Channel</strong></p>
+        </section>
+
+        <section class="resume" data-aos="fade-up" data-aos-delay="500">
+            <a href="#" class="resume-button">Download My Resume</a>
+        </section>
+    </div>
+
+    <script>
+        AOS.init({
+            duration: 1200,
+            once: true,
+        });
+    </script>
+</body>
+          </html>* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #0a0f2c, #0e1b45);
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.container {
+    background: #111c44;
+    padding: 3rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.7);
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #7ab7ff;
+}
+
+/* Floating Animation */
+.floating {
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% { transform: translatey(0px); }
+    50% { transform: translatey(-10px); }
+    100% { transform: translatey(0px); }
+}
+
+section {
+    margin-top: 2rem;
+}
+
+h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: #5fa8ff;
+}
+
+p, li {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+    text-align: left;
+}
+
+a {
+    color: #8ab4ff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Resume Button */
+.resume-button {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.8rem 1.5rem;
+    background-color: #5fa8ff;
+    color: #0a0f2c;
+    font-weight: bold;
+    border-radius: 30px;
+    transition: background 0.3s ease;
+}
+
+.resume-button:hover {
+    background-color: #7ab7ff;
+}
